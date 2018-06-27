@@ -2,7 +2,7 @@
   "name": "restaurant-reviews-app",
   "version": "1.0.0",
   "description": "A progressive web app for the Udacity FEND program",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/DownTheMatrix/Restaurant-Reviews-App.git"
   },
   "author": "Bruno Mazza <suija87gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DownTheMatrix/Restaurant-Reviews-App/issues"
   },
