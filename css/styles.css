@@ -333,7 +333,7 @@ nav h1 a:hover {
 }
 
 #restaurant-address {
-  font-size: 12pt;
+  font-size: 14px;
   margin: 10px 0px;
   border-bottom: 1px solid #666;
   font-weight: bold;
@@ -342,7 +342,7 @@ nav h1 a:hover {
 #restaurant-cuisine {
   background-color: #333;
   color: #ddd;
-  font-size: 12pt;
+  /* font-size: 12pt; */
   font-weight: 300;
   letter-spacing: 10px;
   margin: 0 0 20px;
@@ -365,7 +365,7 @@ nav h1 a:hover {
 
 #reviews-container h2 {
   color: #f58500;
-  font-size: 20pt;
+  /* font-size: 20pt; */
   font-weight: 300;
   letter-spacing: -1px;
 }
@@ -377,7 +377,7 @@ nav h1 a:hover {
 
 #reviews-list li {
   background-color: #fff;
-  border: 2px solid #f3f3f3;
+  border: 1px solid rgb(218, 213, 213);
   display: block;
   list-style-type: none;
   margin: 0 0 30px;
