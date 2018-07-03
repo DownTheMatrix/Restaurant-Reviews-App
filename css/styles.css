@@ -222,7 +222,7 @@ nav h1 a:hover {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 #restaurants-list li {
