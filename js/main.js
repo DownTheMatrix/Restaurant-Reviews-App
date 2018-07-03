@@ -158,9 +158,13 @@ fillRestaurantsHTML = (restaurants = self.restaurants) => {
 createRestaurantHTML = (restaurant) => {
   const li = document.createElement('li');
 
+  // Add accessibility: alt text
   const image = document.createElement('img');
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  const altText = `${restaurant.name} is a restaurant in ${restaurant.neighborhood}`;
+  image.setAttribute('title', altText);
+  image.setAttribute('alt', altText);
   li.append(image);
 
   const name = document.createElement('h1');
