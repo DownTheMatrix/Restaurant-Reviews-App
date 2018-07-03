@@ -80,17 +80,24 @@ fetchRestaurantFromURL = (callback) => {
  * Create restaurant HTML and add it to the webpage
  */
 fillRestaurantHTML = (restaurant = self.restaurant) => {
+  // Restaurant Name
   const name = document.getElementById('restaurant-name');
   name.innerHTML = restaurant.name;
-  // Add accessibility
-
+  
+  // Restaurant Address
   const address = document.getElementById('restaurant-address');
   address.innerHTML = restaurant.address;
 
+  // Restaurant Images
   const image = document.getElementById('restaurant-img');
-  image.className = 'restaurant-img'
+  image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
+  // Add accessibility: alt text
+  const altText = `${restaurant.name} is a restaurant in ${restaurant.neighborhood}`;
+  image.setAttribute('title', altText);
+  image.setAttribute('alt', altText);
 
+  // Restaurant Cuisine
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
 
