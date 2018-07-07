@@ -93,7 +93,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   image.className = 'restaurant-img';
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   // Add accessibility: alt text
-  const altText = `${restaurant.name} is a restaurant in ${restaurant.neighborhood}`;
+  const altText = `"${restaurant.name}" is a restaurant in ${restaurant.neighborhood}`;
   image.setAttribute('title', altText);
   image.setAttribute('alt', altText);
 
