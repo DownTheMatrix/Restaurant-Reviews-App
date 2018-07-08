@@ -1,6 +1,5 @@
 // Create a version and a cache name
-const version = '1.0.0';
-const staticCacheName = `restaurant-reviews-app-version ${version}`;
+const staticCacheName = 'restaurant-static-v1';
 
 // Cache all the files
 self.addEventListener('install', event => {
@@ -15,8 +14,9 @@ self.addEventListener('install', event => {
           'js/dbhelper.js',
           'js/main.js',
           'js/register_sw.js',
-          'js/restaurant_info.js',
-          'data/restaurants.json'
+          'data/restaurants.json',
+          'offline/404.html',
+          'offline/offline.html'
         ]).catch(error => {
         console.log('Caches opening failed: ' + error);
       });
@@ -35,13 +35,15 @@ self.addEventListener('fetch', event => {
       }
       return fetch(event.request).then(response => {
         if (response.status === 404) {
+          console.log(response.status);
           return caches.match('offline/404.html');
         }
-        return response
+        return response;
       });
-    }).catch( () => {
+    }).catch(error => {
       // If both fail, show a generic fallback:
-      return caches.match('offline/404.html');
+      console.log('Error: ', error);
+      return caches.match('offline/offline.html');
     })
   );
 });
@@ -53,7 +55,7 @@ self.addEventListener('activate', event => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.filter(cacheName => {
-          return cacheName.startsWith('restaurant-static-') && cacheName !== staticCacheName;
+          return cacheName.startsWith('restaurant-') && cacheName !== staticCacheName;
         }).map(cacheName => {
           return caches.delete(cacheName);
         })
