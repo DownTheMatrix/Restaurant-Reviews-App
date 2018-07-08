@@ -1,6 +1,6 @@
 // Check if service worker is supported in the browser
 if (navigator.serviceWorker) {
-    navigator.serviceWorker.register('sw/sw.js')
+    navigator.serviceWorker.register('sw.js')
         .then(registration => {
             console.log(`Registration successful, scope is ${registration.scope}`);
         }).catch(error => {
