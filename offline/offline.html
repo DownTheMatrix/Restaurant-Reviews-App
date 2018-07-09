@@ -7,33 +7,60 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>No Connection</title>
     <style>
-        header {
-            text-align: center;
+        html {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
 
         #main-img {
             width: 35vw;
             min-height: 300px;
             margin: 0 auto;
+            text-align: center;
+            flex: 1 0 auto;
+            padding: 20px;
         }
 
         #main-img img {
-            width: 100%;
-            height: 100%;
+            width: 80%;
+            height: 80%;
+        }
+
+        #main-img p {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin: 0 auto;
+            flex-shrink: 0;
+            padding: 20px;
         }
     </style>
 </head>
 
 <body>
 
+    <!-- Content -->
     <div id="main-img">
-        <!-- Img credit: https://www.pexels.com/photo/autumn-autumn-leaves-branches-danger-305236/ -->
-        <img src="img/no-connection.jpeg" alt="slow connection" title="no connection">
+        <img src="img/no-wifi.png" alt="no connection" title="no connection">
+        <p>Looks like your connection isn't working. Try again in a moment.</p>
     </div>
 
-    <header>
-        <h1>Looks like your connection isn't working. Try again in a moment.</h1>
-    </header>
+    <!-- Credit -->
+    <footer>
+        <div>Icons made by
+            <a href="http://www.freepik.com" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+        </div>
+    </footer>
 
 </body>
 
