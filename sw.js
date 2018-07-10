@@ -1,3 +1,9 @@
+// Empty the old cache for testing
+caches.keys().then(names => {
+    for (let name of names)
+        caches.delete(name);
+});
+
 // Create a version and a cache name
 const staticCacheName = 'restaurant-static-v1';
 
@@ -16,7 +22,9 @@ self.addEventListener('install', event => {
           'js/register_sw.js',
           'data/restaurants.json',
           'offline/404.html',
-          'offline/offline.html'
+          'offline/offline.html',
+          'offline/img/no-wifi.png',
+          'offline/img/error-404.png'
         ]).catch(error => {
         console.log('Caches opening failed: ' + error);
       });
