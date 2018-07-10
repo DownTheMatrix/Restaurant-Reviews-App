@@ -81,6 +81,11 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
   max-width: 100%;
 }
 
+#footer a:hover {
+  text-decoration: underline;
+  color: rgb(243, 161, 10);
+}
+
 /* ====================== Navigation ====================== */
 
 nav {
@@ -165,6 +170,12 @@ nav h1 a:hover {
   height: 400px;
   max-width: 100%;
   background-color: #ccc;
+}
+
+/* This is to increase the contrast ratio when running WAVE extension */
+.leaflet-control-attribution a {
+  color: #1d1dff !important;
+  background-color: #fff;
 }
 
 /* ====================== Restaurant Filtering ====================== */
