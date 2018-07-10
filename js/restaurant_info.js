@@ -94,7 +94,8 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
   // Add accessibility: alt text
   const altText = `"${restaurant.name}" is a restaurant in ${restaurant.neighborhood}`;
-  image.setAttribute('title', altText);
+  const toolTip = `"${restaurant.name}" can be found in ${restaurant.neighborhood}`;
+  image.setAttribute('title', toolTip);
   image.setAttribute('alt', altText);
 
   // Restaurant Cuisine
