@@ -1,7 +1,7 @@
 /* ====================== General Styling ====================== */
 
 :root {
-  --primary: ;
+  --primary: #15527d;
   --hover: hsla(195, 93%, 52%, 0.76);
 }
 
@@ -72,7 +72,7 @@ article, aside, canvas, details, figcaption, figure, footer, header, hgroup, men
 
 #footer {
   background-color: #444;
-  color: #aaa;
+  color: #e0e0e0;
   font-size: 1em;
   letter-spacing: 1px;
   padding: 25px;
@@ -171,7 +171,7 @@ nav h1 a:hover {
 .filter-options {
   max-width: 100%;
   /* width: 100%; */
-  background-color: #3397DB;
+  background-color: #15527d;
   padding: 1em;
   display: flex;
   flex-direction: row;
@@ -241,7 +241,7 @@ nav h1 a:hover {
 }
 
 #restaurants-list li h1 {
-  color: #f18200;
+  color: #744200;
   font-family: Arial, sans-serif;
   font-size: 16px;
   font-weight: 200;
@@ -258,7 +258,7 @@ nav h1 a:hover {
 }
 
 #restaurants-list li a {
-  background-color: #f18200;
+  background-color: #a02304;
   border-bottom: 3px solid #eee;
   color: #fff;
   display: inline-block;
@@ -271,9 +271,9 @@ nav h1 a:hover {
 }
 
 #restaurants-list li a:hover {
-  background-color: #be2a05;
+  background-color: #d33710;
   cursor: pointer;
-  border: 2px solid #fff;
+  border: 1px solid rgb(247, 102, 6);
 }
 
 /* ====================== Restaurant Details ====================== */
