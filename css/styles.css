@@ -116,17 +116,6 @@ nav h1 a:hover {
   color: var(--hover);
 }
 
-@media only screen and (max-width: 450px) {
-  nav h1 {
-    font-size: 0.9em;
-    padding: 1em;
-    margin: auto;
-  }
-  .filter-options {
-    flex-wrap: wrap;
-  }
-}
-
 #breadcrumb {
     padding: 10px 40px 16px;
     list-style: none;
@@ -150,7 +139,7 @@ nav h1 a:hover {
 
 /* Add a color to all links inside the list */
 #breadcrumb li a {
-    color: #0275d8;
+    color: #02437c;
     text-decoration: none;
 }
 
@@ -326,7 +315,7 @@ nav h1 a:hover {
 } */
 
 #restaurant-name {
-  color: #f18200;
+  color: #743e00;
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: 200;
@@ -374,7 +363,7 @@ nav h1 a:hover {
 }
 
 #reviews-container h2 {
-  color: #f58500;
+  color: #743e00;
   /* font-size: 20pt; */
   font-weight: 300;
   letter-spacing: -1px;
@@ -418,4 +407,13 @@ nav h1 a:hover {
 }
 
 /* Media Queries */
-
+@media only screen and (max-width: 450px) {
+  nav h1 {
+    font-size: 0.9em;
+    padding: 1em;
+    margin: auto;
+  }
+  .filter-options {
+    flex-wrap: wrap;
+  }
+}
